@@ -1,0 +1,74 @@
+{% extends 'metropo/base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <div class="banner">
+            <h1>Bienvenidos a MetropoGames</h1>
+        </div>
+
+    <div class="content-all">
+            <div class="content-img" id="img1">
+                <a href="#img5" class="icon-left-open"></a>
+                <img src="{% static 'img/carousel5.jpg' %}" alt="imagen carrusel 5">
+                <a href="#img2" class="icon-right-open"></a>
+            </div>
+            <div class="content-img" id="img2">
+                <a href="#img1" class="icon-left-open"></a>
+                <img src="{% static 'img/carousel4.jpg' %}" alt="imagen carrusel 4">
+                <a href="#img3" class="icon-right-open"></a>
+                <div class="content-details">
+                    <h3>Bienvenido a MetropoGames</h3>
+                    <p>El blog informativo de videojuegos que no te puedes perder...</p>
+                    <input type="button" value="Informate más" ><br><br>
+                    <h3>Informate con MetropoGames</h3>
+                </div>
+            </div>
+            <div class="content-img" id="img3">
+                <a href="#img2" class="icon-left-open"></a>
+                <img src="{% static 'img/carousel3.jpg' %}" alt="imagen carrusel 3">
+                <a href="#img4" class="icon-right-open"></a>
+            </div>
+            <div class="content-img" id="img4">
+                <a href="#img3" class="icon-left-open"></a>
+                <img src="{% static 'img/carousel2.jpg' %}" alt="imagen carrusel 2">
+                <a href="#img5" class="icon-right-open"></a>
+            </div>
+            <div class="content-img" id="img5">
+                <a href="#img4" class="icon-left-open"></a>
+                <img src="{% static 'img/carrousel1.jpg' %}" alt="imagen carrusel 1">
+                <a href="#img1" class="icon-right-open"></a>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="banner">
+            <h1>Sobre Nosotros</h1>
+        </div>
+    <div class="desc">
+        <div class="texto">
+            <h1>Quienes somos</h1>
+            <p>
+                <b>MetropoGames</b> ofrece, desde el punto de vista de un jugador veterano, análisis e impresiones independientes del sector y de los últimos videojuegos 
+                lanzados al mercado. En este lugar encontrarás opiniones libres y reales, así como especiales y otros artículos de interés, 
+                escritos siempre por un jugador como vosotros. Cada revista o página web tiene su propio criterio, su estilo, una política y sus propias reglas, a menudo impuestas. 
+            </p>
+        </div>
+        <div class="texto">
+            <h1>Misión</h1>
+            <p>
+                Desde un punto de vista abierto y todoterreno, en MetropoGames se valoran aspectos como: una buena historia, los personajes con trasfondo, 
+                mecánicas de juego ricas y profundas, capacidad de inmersión, reto, el realismo, IA, los toques de simulación, originalidad, diversión, 
+                las pequeñas dosis de estrategia, la aventura y todo aquello que de alguna forma busque enriquecer, innovar o sorprender al jugador. Siempre sin spoilers.
+            </p>
+
+        </div>
+
+    </div>
+</main>
+
+
+
+
+
+{% endblock %}
