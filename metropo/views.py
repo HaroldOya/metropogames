@@ -5,4 +5,5 @@ from .models import Juego
 # Create your views here.
 
 def index(request):
-    return render(request, 'metropogames/base.html' )
+    return render(request, 'metropogames/index.html' )
+
