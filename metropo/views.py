@@ -11,3 +11,11 @@ def index(request):
 def formulario(request):
     return render(request, 'metropogames/formulario.html' )
 
+def loginvista(request):
+    return render(request, 'metropogames/loginvista.html' )
+
+def galeria(request):
+    return render(request, 'metropogames/galeria.html' )
+
+
+
