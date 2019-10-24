@@ -7,3 +7,7 @@ from .models import Juego
 def index(request):
     return render(request, 'metropogames/index.html' )
 
+
+def formulario(request):
+    return render(request, 'metropogames/formulario.html' )
+
