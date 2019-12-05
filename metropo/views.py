@@ -82,7 +82,7 @@ def nuevojuego(request):
         if form.is_valid():
             juego = form.save(commit=False)
             juego.save()
-            return redirect('metropogames/galeria.html')
+            return redirect('/')
     else:
         form = PostForm()
     return render(request, 'metropogames/nuevojuego.html', {'form': form})
