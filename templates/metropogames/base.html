@@ -23,7 +23,7 @@
         <a href="{% url 'index' %}">Inicio</a>
         <a href="{% url 'galeria' %}">Galeria</a>
         <a href="{% url 'formulario' %}">Registrarse</a>
-        <a href="{% url 'loginvista' %}">Inicio Sesión</a>
+        <a href="{% url 'login' %}">Inicio Sesión</a>
         <a href="{% url 'juegonuevo' %}">Ingresa un juego</a>
       </div>
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menú</span>
@@ -54,7 +54,19 @@
                     &copy; Todos los derechos reservados
                 </td>
             </tr>
+            <tr>
+                <td colspan="2">
+                    <a href="/logout">Cerrar sesión</a>
+                </td>
+            </tr>
         </table>
+
+        <p>
+            Bienvenido <b>{{request.user.username}}</b>, 
+            esta página es exclusiva para usuarios registrados.
+            
+        </p>
+        
     <div class="redes">
             <a href="http://www.facebook.com"><img src="{% static 'img/face50.png' %}" alt="facebook icono" ></a>
             <a href="https://www.instagram.com/"><img src="{% static 'img/insta50.png' %}" alt="instagram icono" ></a>
