@@ -24,7 +24,10 @@
         <a href="{% url 'galeria' %}">Galeria</a>
         <a href="{% url 'formulario' %}">Registrarse</a>
         <a href="{% url 'login' %}">Inicio Sesión</a>
+        {% if user.is_authenticated %}
         <a href="{% url 'juegonuevo' %}">Ingresa un juego</a>
+        <a href="/logout">Cerrar sesión</a>
+        {% endif %}
       </div>
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menú</span>
 </nav>
@@ -55,18 +58,20 @@
                 </td>
             </tr>
             <tr>
+                {% if user.is_authenticated %}
                 <td colspan="2">
                     <a href="/logout">Cerrar sesión</a>
                 </td>
+                {% endif %}
             </tr>
         </table>
-
+        {% if user.is_authenticated %}
         <p>
             Bienvenido <b>{{request.user.username}}</b>, 
             esta página es exclusiva para usuarios registrados.
             
         </p>
-        
+        {% endif %}
     <div class="redes">
             <a href="http://www.facebook.com"><img src="{% static 'img/face50.png' %}" alt="facebook icono" ></a>
             <a href="https://www.instagram.com/"><img src="{% static 'img/insta50.png' %}" alt="instagram icono" ></a>
